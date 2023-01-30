@@ -1,0 +1,25 @@
+@use 'components/colors' as *;
+
+@mixin positioning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin button {
+  .btn {
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: $background-bg-glass;
+    box-shadow: $box-shadow;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
